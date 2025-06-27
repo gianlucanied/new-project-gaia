@@ -11,7 +11,7 @@
 
 <style scoped>
 header {
-  font-family: 'Andale Mono', sans-serif;
+  font-family: 'Andale Mono';
   font-size: 1rem;
 }
 
@@ -20,7 +20,7 @@ header {
   background-color: black;
   display: flex;
   justify-content:space-between;
-  font-family: 'Andale Mono', sans-serif;
+  font-family: 'Andale Mono';
 }
 
 a {
