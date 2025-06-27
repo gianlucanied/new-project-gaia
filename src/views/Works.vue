@@ -7,6 +7,10 @@ const selectProject = (index) => {
   selectedProject.value = index;
 };
 
+const isVideo = (url) => {
+  return url.endsWith(".mp4");
+};
+
 const projects = [
   {
     role: "SET DESIGN",
@@ -16,7 +20,6 @@ const projects = [
       "/immagini_video_high_res/details-2.jpg",
       "/immagini_video_high_res/HORST.jpg",
     ],
-
     description: `“Buried in a Coffin the Size of a Grain of Rice” (Installation) and “Midnight Pearls” (film) were installed in one of the art
           pavilion at Horst festival for the 2025 edition. Within this space of meditation, prayer, silence and offering, we are invited to at
           once re-enter the body and be transported to an in-between realm. Here, darkness is embraced to discover the first rays of light. A
@@ -49,7 +52,10 @@ const projects = [
   {
     role: "CREATIVE PRODUCTION",
     title: "PRADA FW25 SHOW",
-    image: [],
+    image: [
+      "/immagini_video_high_res/9.mp4",
+      "/immagini_video_high_res/Download.mp4",
+    ],
     description: `Definition of creative briefs and image research. <br>
           Management of all phases of the creative production: creative partners (set design team, styling team, DOP team, editors, models), fees negotiation, budget alignment. <br>
           Coordination of pre-production logistc and post-production scheduling. <br>
@@ -59,7 +65,11 @@ const projects = [
   {
     role: "CREATIVE PRODUCTION",
     title: "PRADA ALWAYS ON",
-    image: [],
+    image: [
+      "/immagini_video_high_res/Download_(1).mp4",
+      "/immagini_video_high_res/Download-copy.mp4",
+      "/immagini_video_high_res/Download-copy-2.mp4",
+    ],
     description: `Definition of creative briefs and image research. <br>
           Management of all phases of the creative production: creative partners (set design team, styling team, DOP team, editors,
           models), fees negotiation, budget alignment. <br>
@@ -137,7 +147,11 @@ const projects = [
   {
     role: "CREATIVE PRODUCTION",
     title: "ACNE STUDIOS DIGITAL CONTENT",
-    image: [],
+    image: [
+      "/immagini_video_high_res/Download(1)copy.mp4",
+      "/immagini_video_high_res/Download(2).mp4",
+      "/immagini_video_high_res/Downloadcopy3.mp4",
+    ],
     description: `Art direction and content production for Acne Studios Tik Tok channel, featuring runway content, <br>
           Backstage, everyday storytelling. <br>
           Production of ad-hoc timelines for content production, post-production and delivery for all social platforms. <br>
@@ -148,7 +162,11 @@ const projects = [
   {
     role: "CREATIVE PRODUCTION",
     title: "LORO PIANA FW24 LOOKBOOK",
-    image: [],
+    image: [
+      "/immagini_video_high_res/Downloadcopy6.mp4",
+      "/immagini_video_high_res/Downloadcopy5.mp4",
+      "/immagini_video_high_res/Downloadcopy4.mp4",
+    ],
     description: `Definition of creative briefs and image research. <br>
           Management of all phases of the content production: managing creative partners (set design team, styling team, DOP team, <br>
           editors, models)
@@ -159,7 +177,10 @@ const projects = [
   {
     role: "CREATIVE PRODUCTION",
     title: "LORO PIANA HOLIDAY CAMPAIGN FW24",
-    image: [],
+    image: [
+      "/immagini_video_high_res/Downloadcopy7.mp4",
+      "/immagini_video_high_res/Downloadcopy11.00.07.mp4",
+    ],
     description: `Definition of creative briefs and image research. <br>
           Management of all phases of the content production: managing creative partners (set design team, styling team, DOP team,
           editors, models) <br>
@@ -170,7 +191,10 @@ const projects = [
   {
     role: "CREATIVE PRODUCTION",
     title: "LORO PIANA COCOONING CAMPAIGN SS23",
-    image: [],
+    image: [
+      "/immagini_video_high_res/Downloadcopy8.mp4",
+      "/immagini_video_high_res/Download(1)copy3.mp4",
+    ],
     description: `Definition of creative briefs and image research. <br>
           Management of all phases of the content production: managing creative partners (set design team, styling team, DOP team,
           editors, models) <br>
@@ -245,12 +269,20 @@ const projects = [
     <div class="single-work" v-if="selectedProject !== null">
       <h2>{{ projects[selectedProject].title }}</h2>
       <div class="image-gallery">
-        <img
+        <template
           v-for="(img, imgIndex) in projects[selectedProject].image"
           :key="imgIndex"
-          :src="img"
-          alt=""
-        />
+        >
+          <video
+            v-if="isVideo(img)"
+            :src="img"
+            controls
+            autoplay
+            muted
+            loop
+          ></video>
+          <img v-else :src="img" alt="" />
+        </template>
       </div>
       <p>{{ projects[selectedProject].role }}</p>
       <p><span v-html="projects[selectedProject].description"></span></p>
@@ -292,13 +324,19 @@ const projects = [
 
 .image-gallery {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
 }
 
 .image-gallery img {
   width: 300px;
-  height: 200px;
-  object-fit: cover;
+  height: 300px;
+  object-fit: contain;
+}
+
+.image-gallery video {
+  width: 300px;
+  height: 400px;
+  object-fit: contain;
 }
 </style>
