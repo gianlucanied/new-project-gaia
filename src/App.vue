@@ -1,6 +1,6 @@
 <script setup>
 import Home from './views/Home.vue'
-import About from './views/About.vue'
+import Works from './views/Works.vue'
 import Header from './components/Header.vue'
 
 

@@ -5,7 +5,7 @@
 <template>
   <header class="header">
       <router-link to="/">GAIA GRISANTI</router-link>
-      <router-link to="/about">ABOUT</router-link>
+      <router-link to="/works">WORKS</router-link>
   </header>
 </template>
 

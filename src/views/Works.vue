@@ -232,27 +232,32 @@ const projects = [
 </script>
 
 <template>
-  <div>
-    <ul>
-      <li
+  <div class="works">
+    <div>
+      <div
         v-for="(project, index) in projects"
         :key="index"
         @click="selectProject(index)"
         style="cursor: pointer; margin-bottom: 10px; font-weight: bold"
       >
         {{ project.title }}
-      </li>
-    </ul>
+    </div>
+  </div>
 
     <div v-if="selectedProject !== null">
       <h2> {{ projects[selectedProject].title }} </h2>
       <p><strong>Ruolo:</strong> {{ projects[selectedProject].role }}</p>
       <p><strong>Descrizione:</strong> <br> <span v-html="projects[selectedProject].description"></span></p>
-      <p><strong>Location:</strong> <br> <span v-html="projects[selectedProject].location"></span></p>
+      <div v-if="projects[selectedProject].location"><p><strong>Location:</strong> <br> <span v-html="projects[selectedProject].location"></span></p></div>
     </div>
   </div>
 </template>
 
 <style scoped>
-
+.works {
+  color: white;
+  background-color: black;
+  padding: 3rem;
+  height: 100vh;
+}
 </style>
