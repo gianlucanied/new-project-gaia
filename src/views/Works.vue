@@ -1,10 +1,13 @@
 <script setup>
-import { ref } from "vue";
+import { ref, nextTick } from "vue";
 
 const selectedProject = ref(null);
+const projectDetailsRef = ref(null);
 
-const selectProject = (index) => {
+const selectProject = async (index) => {
   selectedProject.value = index;
+  await nextTick();
+  projectDetailsRef.value?.scrollIntoView({ behavior: "smooth" });
 };
 
 const isVideo = (url) => {
@@ -266,7 +269,7 @@ const projects = [
       </div>
     </div>
 
-    <div class="single-work" v-if="selectedProject !== null">
+    <div class="single-work" v-if="selectedProject !== null" ref="projectDetailsRef">
       <h2>{{ projects[selectedProject].title }}</h2>
       <div class="image-gallery">
         <template
