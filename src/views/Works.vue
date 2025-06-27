@@ -24,10 +24,10 @@ const projects = [
       "/immagini_video_high_res/HORST.jpg",
     ],
     description: `“Buried in a Coffin the Size of a Grain of Rice” (Installation) and “Midnight Pearls” (film) were installed in one of the art
-          pavilion at Horst festival for the 2025 edition. Within this space of meditation, prayer, silence and offering, we are invited to at
-          once re-enter the body and be transported to an in-between realm. Here, darkness is embraced to discover the first rays of light. A
+          pavilion at Horst festival for the 2025 edition. <br> Within this space of meditation, prayer, silence and offering, we are invited to at
+          once re-enter the body and be transported to an in-between realm. <br> Here, darkness is embraced to discover the first rays of light. <br> A
           portal connects the ancestral with the mortal world and allows entities to watch over the current mortal realm, offering guidance to
-          those willing to receive. We find a guardian watching over an unborn entity, in utero in the swamp.
+          those willing to receive. We find a guardian watching over an unborn entity, in utero in the swamp. <br>
           I was part of the set design team that built the art and the pavilion before Horst Festival. `,
     location:
       "Artist: Joshua Serafin Photography: Maryan Sayd + Kristina Railaitè <br><br> On view at Horst Festival / Asiat Park Vilvoorde, Belgium",
@@ -40,10 +40,10 @@ const projects = [
       "/immagini_video_high_res/convey_installation-view-26-768x960.jpg",
       "/immagini_video_high_res/convey_installation-view-18-768x960.jpg",
     ],
-    description: `Convey reached its third edition, establishing itself as a prominent international platform and accelerator for design. In close
+    description: `Convey reached its third edition, establishing itself as a prominent international platform and accelerator for design. <br> In close
           collaboration with Simple Flair studio, I had the role of project manager of the exhibition and event producer, keep deadlines
           and overseeing the brand identity and art direction for the setup and spatial design of the new location in the heart of Porta
-          Venezia. The project expanded along the street, creating a cohesive and engaging territorial experience that seamlessly
+          Venezia. <br> The project expanded along the street, creating a cohesive and engaging territorial experience that seamlessly
           integrated various brand showcases and initiatives.`,
     location: `Branding: Giga Design Studio
           Curatorship: Simple Flair
@@ -171,8 +171,8 @@ const projects = [
       "/immagini_video_high_res/Downloadcopy4.mp4",
     ],
     description: `Definition of creative briefs and image research. <br>
-          Management of all phases of the content production: managing creative partners (set design team, styling team, DOP team, <br>
-          editors, models)
+          Management of all phases of the content production: managing creative partners (set design team, styling team, DOP team,
+          editors, models) <br>
           Cross-funcational alignment with internal departments (Merchandising, Product, GTM, E-commerce, Paid Media)`,
     location: "",
   },
@@ -210,11 +210,11 @@ const projects = [
     title: "LORO PIANA MILAN DESIGN WEEK 2024",
     image: ["/immagini_video_high_res/7.jpg", "/immagini_video_high_res/2.jpg"],
     description: `During my in-house experience at Loro Piana, I was in charge of social media and talents coordination.
-          My task was implementing the awareness of the brand, by activating the right talents and digital creators.
-          MY role required the creation of and influencer strategy and digital creators strategy to increase the awareness of the brand.
+          My task was implementing the awareness of the brand, by activating the right talents and digital creators. <br>
+          MY role required the creation of and influencer strategy and digital creators strategy to increase the awareness of the brand. <br>
           I was particularly taking care of organising the talents journey (fitting, seeding, travels, accommodations),coordinating their
-          presence at events and taking care of content creation.
-          This process involved a high level of budget management, fees negotiation and internal coordination with communication teams.
+          presence at events and taking care of content creation. <br>
+          This process involved a high level of budget management, fees negotiation and internal coordination with communication teams. <br>
           Talents involved: @fredstauffer @brendahashtag @stylenotcom @highsnobiety @culted @juliahobbs`,
     location: "",
   },
@@ -227,12 +227,12 @@ const projects = [
       "/immagini_video_high_res/6.jpeg",
       "/immagini_video_high_res/542254254.png",
     ],
-    description: `During my in-house experience at Loro Piana, I was in charge of social media and talents coordination.
-          My task was implementing the awareness of the brand, by activating the right talents and digital creators.
-          MY role required the creation of and influencer strategy and digital creators strategy to increase the awareness of the brand.
+    description: `During my in-house experience at Loro Piana, I was in charge of social media and talents coordination. <br>
+          My task was implementing the awareness of the brand, by activating the right talents and digital creators. <br>
+          MY role required the creation of and influencer strategy and digital creators strategy to increase the awareness of the brand. <br>
           I was particularly taking care of organising the talents journey (fitting, seeding, travels, accommodations),coordinating their
-          presence at events and taking care of content creation.
-          This process involved a high level of budget management, fees negotiation and internal coordination with communication teams.
+          presence at events and taking care of content creation. <br>
+          This process involved a high level of budget management, fees negotiation and internal coordination with communication teams. <br>
           Talents involved: @fredstauffer @brendahashtag @stylenotcom @highsnobiety @culted @juliahobbs`,
     location: "",
   },
@@ -245,12 +245,12 @@ const projects = [
       "/immagini_video_high_res/527522552.png",
       "/immagini_video_high_res/55758.png",
     ],
-    description: `During my in-house experience at Loro Piana, I was in charge of social media and talents coordination.
-          My task was implementing the awareness of the brand, by activating the right talents and digital creators.
-          MY role required the creation of and influencer strategy and digital creators strategy to increase the awareness of the brand.
+    description: `During my in-house experience at Loro Piana, I was in charge of social media and talents coordination. <br>
+          My task was implementing the awareness of the brand, by activating the right talents and digital creators. <br>
+          My role required the creation of and influencer strategy and digital creators strategy to increase the awareness of the brand. <br>
           I was particularly taking care of organising the talents journey (fitting, seeding, travels, accommodations),coordinating their
-          presence at events and taking care of content creation.
-          This process involved a high level of budget management, fees negotiation and internal coordination with communication teams.
+          presence at events and taking care of content creation. <br>
+          This process involved a high level of budget management, fees negotiation and internal coordination with communication teams. <br>
           Talents involved: @fredstauffer @brendahashtag @stylenotcom @highsnobiety @culted @juliahobbs`,
     location: "",
   },
@@ -260,7 +260,7 @@ const projects = [
 <template>
   <div class="works">
     <div class="list">
-      <div
+      <div class="name-list"
         v-for="(project, index) in projects"
         :key="index"
         @click="selectProject(index)"
@@ -286,7 +286,7 @@ const projects = [
           <img v-else :src="img" alt="" />
         </template>
       </div>
-      <p>{{ projects[selectedProject].role }}</p>
+      <p class="role">{{ projects[selectedProject].role }}</p>
       <p><span v-html="projects[selectedProject].description"></span></p>
       <div v-if="projects[selectedProject].location">
         <p>
@@ -318,10 +318,19 @@ const projects = [
   }
 }
 
+.role {
+  margin-top: 40px;
+}
+
 .single-work {
   margin: 6rem 0;
   font-family: "Courier New", Courier, monospace;
   font-size: 15px;
+}
+
+.name-list {
+  font-family: "Andale Mono", sans-serif;
+
 }
 
 .image-gallery {
