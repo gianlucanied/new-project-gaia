@@ -24,6 +24,7 @@
       </div>
     </div>
   </div>
+  <div class="gn"><a href="https://gianlucanieddu.netlify.app/">© gianlucanied</a></div>
 </template>
 
 <style scoped>
@@ -66,5 +67,19 @@ a {
   .content-wrapper {
     max-width: 70vw;
   }
+
+  .gn {
+    a {font-size: 10px; }
+  }
+}
+
+.gn {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    text-align: end;
+    padding: 50px;
+  font-family: "Courier New", Courier, monospace;
+
 }
 </style>
