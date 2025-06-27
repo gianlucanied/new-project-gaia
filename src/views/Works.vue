@@ -290,7 +290,7 @@ const projects = [
       <p><span v-html="projects[selectedProject].description"></span></p>
       <div v-if="projects[selectedProject].location">
         <p>
-          <strong></strong> <br />
+           <br />
           <span v-html="projects[selectedProject].location"></span>
         </p>
       </div>
