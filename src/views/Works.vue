@@ -277,7 +277,6 @@ const projects = [
             v-if="isVideo(img)"
             :src="img"
             controls
-            autoplay
             muted
             loop
           ></video>
