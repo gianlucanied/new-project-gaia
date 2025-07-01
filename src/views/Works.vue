@@ -1,7 +1,7 @@
 <script setup>
-import { ref, nextTick } from "vue";
+import { nextTick, ref } from "vue";
 
-const selectedProject = ref(null);
+const selectedProject = ref(0);
 const projectDetailsRef = ref(null);
 
 const selectProject = async (index) => {
@@ -30,7 +30,7 @@ const projects = [
           those willing to receive. We find a guardian watching over an unborn entity, in utero in the swamp. <br>
           I was part of the set design team that built the art and the pavilion before Horst Festival. `,
     location:
-      "Artist: Joshua Serafin Photography: Maryan Sayd + Kristina Railaitè <br><br> On view at Horst Festival / Asiat Park Vilvoorde, Belgium",
+      "Artist: Joshua Serafin <br> Photography: Maryan Sayd + Kristina Railaitè <br><br> On view at Horst Festival / Asiat Park Vilvoorde, Belgium",
   },
   {
     role: "PROJECT MANAGEMENT",
@@ -45,8 +45,8 @@ const projects = [
           and overseeing the brand identity and art direction for the setup and spatial design of the new location in the heart of Porta
           Venezia. <br> The project expanded along the street, creating a cohesive and engaging territorial experience that seamlessly
           integrated various brand showcases and initiatives.`,
-    location: `Branding: Giga Design Studio
-          Curatorship: Simple Flair
+    location: `Branding: Giga Design Studio <br>
+          Curatorship: Simple Flair <br>
           Graphics + Art: Anna Meck<br> <br> shown at <br>
                       Milan Design Week <br>
                       Via Rosolino Pilo 14, Milano <br>
@@ -270,7 +270,7 @@ const projects = [
     </div>
 
     <div class="single-work" v-if="selectedProject !== null" ref="projectDetailsRef">
-      <h2>{{ projects[selectedProject].title }}</h2>
+      <div class="title-single">{{ projects[selectedProject].title }}</div>
       <div class="image-gallery">
         <template
           v-for="(img, imgIndex) in projects[selectedProject].image"
@@ -305,6 +305,11 @@ const projects = [
   padding: 3rem;
   height: auto;
   min-height: 100vh;
+}
+
+.title-single {
+  font-size: 25px;
+  margin-bottom: 50px;
 }
 
 .list {
