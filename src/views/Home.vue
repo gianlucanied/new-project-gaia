@@ -56,7 +56,7 @@
   width: 100vw;
   height: 100vh;
   transform: translate(-50%, -50%);
-  object-fit: cover; /* <-- Copre tutto lo schermo */
+  object-fit: cover; 
   z-index: -1;
 }
 
@@ -102,7 +102,6 @@ a {
   font-family: "Courier New", Courier, monospace;
 }
 
-/* ✅ MEDIA QUERY CORRETTO */
 @media (max-width: 768px) {
   .content-wrapper {
     max-width: 80vw;
