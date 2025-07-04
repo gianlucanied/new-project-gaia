@@ -42,6 +42,24 @@
 </template>
 
 <style scoped>
+.video-background-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  object-fit: cover; /* <-- Copre tutto lo schermo */
+  z-index: -1;
+}
+
 .about {
   color: white;
   padding: 6rem 0 3rem 0;
@@ -76,18 +94,6 @@ a {
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .content-wrapper {
-    max-width: 70vw;
-  }
-
-  .gn {
-    a {
-      font-size: 10px;
-    }
-  }
-}
-
 .gn {
   color: white;
   font-size: 15px;
@@ -96,21 +102,24 @@ a {
   font-family: "Courier New", Courier, monospace;
 }
 
-.video-background-container {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
+/* ✅ MEDIA QUERY CORRETTO */
+@media (max-width: 768px) {
+  .content-wrapper {
+    max-width: 80vw;
+  }
+
+  .gn a {
+    font-size: 10px;
+  }
+
+  .about {
+    padding: 3rem 0;
+    height: auto;
+  }
+
+  .bottom-section {
+    margin-top: 3rem;
+  }
 }
 
-.background-video {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  z-index: -1;
-}
 </style>
