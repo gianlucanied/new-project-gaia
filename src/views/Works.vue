@@ -54,15 +54,23 @@ const projects = [
   },
   {
     role: "CREATIVE PRODUCTION",
+    title: "PRADA SS26 MENS SHOW",
+    image: [
+      "/immagini_video_high_res/Download--(3).mp4",
+      "/immagini_video_high_res/Download--(4).mp4",
+      "/immagini_video_high_res/Download--(5).mp4",
+    ],
+    description: `Management of all phases of the creative production, art buying and post-production.`,
+    location: ``,
+  },
+  {
+    role: "CREATIVE PRODUCTION",
     title: "PRADA FW25 SHOW",
     image: [
       "/immagini_video_high_res/9.mp4",
       "/immagini_video_high_res/Download.mp4",
     ],
-    description: `Definition of creative briefs and image research. <br>
-          Management of all phases of the creative production: creative partners (set design team, styling team, DOP team, editors, models), fees negotiation, budget alignment. <br>
-          Coordination of pre-production logistc and post-production scheduling. <br>
-          Cross-funcational alignment with internal departments (Merchandising, Product, GTM, E-commerce, Paid Media)`,
+    description: `Management of all phases of the creative production, art buying and post-production.`,
     location: "",
   },
   {
@@ -73,20 +81,16 @@ const projects = [
       "/immagini_video_high_res/Download-copy.mp4",
       "/immagini_video_high_res/Download-copy-2.mp4",
     ],
-    description: `Definition of creative briefs and image research. <br>
-          Management of all phases of the creative production: creative partners (set design team, styling team, DOP team, editors,
-          models), fees negotiation, budget alignment. <br>
-          Coordination of pre-production logistc and post-production scheduling. <br>
-          Cross-funcational alignment with internal departments (Merchandising, Product, GTM, E-commerce, Paid Media)`,
+    description: `Management of all phases of the creative production, art buying and post-production.`,
     location: "",
   },
   {
     role: "EVENT PRODUCTION",
     title: "EQUILIBRIO PROJECT 2024",
     image: [
-      "/immagini_video_high_res/10.jpg",
-      "/immagini_video_high_res/equilibrio_1.jpg",
-      "/immagini_video_high_res/8.jpg",
+      "/immagini_video_high_res/Artboard1.png",
+      "/immagini_video_high_res/Artboard2.png",
+      "/immagini_video_high_res/Artboard3.png",
     ],
     description: `Equilibrio is a yearly art residency and music festival taking place in Porto Ferro, Sardinia where emerging artists and experimental music
           merge in a 7 days community experience. <br>
@@ -121,11 +125,7 @@ const projects = [
       "/immagini_video_high_res/Screenshot2025-06-17184652.png",
       "/immagini_video_high_res/Screenshot2025-06-17184824.png",
     ],
-    description: `Support in all the digital content production for FW23 Acne Studios Show: pre-production logistic and post production phases, assisting onsite for all
-          social-first content, ensuring alignment with the brand guideline. <br>
-          Production of ad-hoc timelines for content production, post-production and delivery for all social platforms. <br>
-          Image and film coordination of KOLs, celebrities and Talents at the photocall. <br>
-          Definition of the the social editorial calendars and content rollouts.`,
+    description: `Management of all phases of the creative production, art buying and post-production.`,
     location:
       "shown at Lycée Carnot 145 Boulevard Malesherbes in the 17th arrondissement, Paris",
   },
@@ -138,11 +138,7 @@ const projects = [
       "/immagini_video_high_res/345.png",
       "/immagini_video_high_res/456.png",
     ],
-    description: `Support in all the digital content production for FW23 Acne Studios Show: pre-production logistic and post production phases, assisting onsite for all
-          social-first content, ensuring alignment with the brand guideline. <br>
-          Production of ad-hoc timelines for content production, post-production and delivery for all social platforms. <br>
-          Image and film coordination of KOLs, celebrities and Talents at the photocall. <br>
-          Definition of the the social editorial calendars and content rollouts`,
+    description: `Management of all phases of the creative production, art buying and post-production.`,
     location:
       "shown at Palais De Tokyo 13 Av. du Président Wilson, 75116 Paris, France",
   },
@@ -155,10 +151,7 @@ const projects = [
       "/immagini_video_high_res/Download(2).mp4",
       "/immagini_video_high_res/Downloadcopy3.mp4",
     ],
-    description: `Art direction and content production for Acne Studios Tik Tok channel, featuring runway content, <br>
-          Backstage, everyday storytelling. <br>
-          Production of ad-hoc timelines for content production, post-production and delivery for all social platforms. <br>
-          Coordination the social editorial calendars and content rollouts.`,
+    description: `Management of all phases of the creative production, art buying and post-production.`,
     location: "",
   },
 
@@ -170,10 +163,7 @@ const projects = [
       "/immagini_video_high_res/Downloadcopy5.mp4",
       "/immagini_video_high_res/Downloadcopy4.mp4",
     ],
-    description: `Definition of creative briefs and image research. <br>
-          Management of all phases of the content production: managing creative partners (set design team, styling team, DOP team,
-          editors, models) <br>
-          Cross-funcational alignment with internal departments (Merchandising, Product, GTM, E-commerce, Paid Media)`,
+    description: `Management of all phases of the creative production, art buying and post-production.`,
     location: "",
   },
 
@@ -184,10 +174,7 @@ const projects = [
       "/immagini_video_high_res/Downloadcopy7.mp4",
       "/immagini_video_high_res/Downloadcopy11.00.07.mp4",
     ],
-    description: `Definition of creative briefs and image research. <br>
-          Management of all phases of the content production: managing creative partners (set design team, styling team, DOP team,
-          editors, models) <br>
-          Cross-funcational alignment with internal departments (Merchandising, Product, GTM, E-commerce, Paid Media)`,
+    description: `Management of all phases of the creative production, art buying and post-production.`,
     location: "",
   },
 
@@ -198,10 +185,7 @@ const projects = [
       "/immagini_video_high_res/Downloadcopy8.mp4",
       "/immagini_video_high_res/Download(1)copy3.mp4",
     ],
-    description: `Definition of creative briefs and image research. <br>
-          Management of all phases of the content production: managing creative partners (set design team, styling team, DOP team,
-          editors, models) <br>
-          Cross-funcational alignment with internal departments (Merchandising, Product, GTM, E-commerce, Paid Media)`,
+    description: `Management of all phases of the creative production, art buying and post-production.`,
     location: "",
   },
 
@@ -224,7 +208,6 @@ const projects = [
     title: "LORO PIANA SS24 PRESS PRESENTATION",
     image: [
       "/immagini_video_high_res/Screenshot2025-0604at17.47.47.png",
-      "/immagini_video_high_res/6.jpeg",
       "/immagini_video_high_res/542254254.png",
     ],
     description: `During my in-house experience at Loro Piana, I was in charge of social media and talents coordination. <br>
@@ -258,53 +241,59 @@ const projects = [
 </script>
 
 <template>
-  <div class="works">
-    <div class="list">
-      <div class="name-list"
-        v-for="(project, index) in projects"
-        :key="index"
-        @click="selectProject(index)"
-      >
-        {{ project.title }}
-      </div>
-    </div>
 
-    <div class="single-work" v-if="selectedProject !== null" ref="projectDetailsRef">
-      <div class="title-single">{{ projects[selectedProject].title }}</div>
-      <div class="image-gallery">
-        <template
-          v-for="(img, imgIndex) in projects[selectedProject].image"
-          :key="imgIndex"
+
+    <!-- Contenuto principale -->
+    <div class="works">
+      <div class="list">
+        <div class="name-list"
+          v-for="(project, index) in projects"
+          :key="index"
+          @click="selectProject(index)"
         >
-          <video
-            v-if="isVideo(img)"
-            :src="img"
-            controls
-            muted
-            loop
-          ></video>
-          <img v-else :src="img" alt="" />
-        </template>
+          {{ project.title }} <span>v</span>
+        </div>
       </div>
-      <p class="role">{{ projects[selectedProject].role }}</p>
-      <p><span v-html="projects[selectedProject].description"></span></p>
-      <div v-if="projects[selectedProject].location">
-        <p>
-           <br />
-          <span v-html="projects[selectedProject].location"></span>
-        </p>
+
+      <div class="single-work" v-if="selectedProject !== null" ref="projectDetailsRef">
+        <div class="title-single">{{ projects[selectedProject].title }}</div>
+        <div class="image-gallery">
+          <template
+            v-for="(img, imgIndex) in projects[selectedProject].image"
+            :key="imgIndex"
+          >
+            <video
+              v-if="isVideo(img)"
+              :src="img"
+              controls
+              muted
+              loop
+            ></video>
+            <img v-else :src="img" alt="" />
+          </template>
+        </div>
+        <p class="role">{{ projects[selectedProject].role }}</p>
+        <p><span v-html="projects[selectedProject].description"></span></p>
+        <div v-if="projects[selectedProject].location">
+          <p>
+             <br />
+            <span v-html="projects[selectedProject].location"></span>
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 </template>
 
 <style scoped>
+
 .works {
   color: white;
   background-color: black;
   padding: 3rem;
   height: auto;
   min-height: 100vh;
+    position: relative;
+  z-index: 1;
 }
 
 .title-single {
@@ -335,7 +324,11 @@ const projects = [
 
 .name-list {
   font-family: "Andale Mono", sans-serif;
-
+  display: flex;
+  justify-content: space-between;
+  span {
+    padding-right: 20px;
+  }
 }
 
 .image-gallery {
