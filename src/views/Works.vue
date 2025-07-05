@@ -17,7 +17,8 @@ const isVideo = (url) => {
 const projects = [
   {
     role: "SET DESIGN",
-    title: "JOSHUA SERAFIN FOR HORST 2025",
+    title: "JOSHUA SERAFIN FOR HORST 2025 (HORST FESTIVAL)",
+
     image: [
       "/immagini_video_high_res/details.jpg",
       "/immagini_video_high_res/details-2.jpg",
@@ -241,58 +242,54 @@ const projects = [
 </script>
 
 <template>
-
-
-    <!-- Contenuto principale -->
-    <div class="works">
-      <div class="list">
-        <div class="name-list"
-          v-for="(project, index) in projects"
-          :key="index"
-          @click="selectProject(index)"
-        >
-          {{ project.title }} <span>v</span>
-        </div>
-      </div>
-
-      <div class="single-work" v-if="selectedProject !== null" ref="projectDetailsRef">
-        <div class="title-single">{{ projects[selectedProject].title }}</div>
-        <div class="image-gallery">
-          <template
-            v-for="(img, imgIndex) in projects[selectedProject].image"
-            :key="imgIndex"
-          >
-            <video
-              v-if="isVideo(img)"
-              :src="img"
-              controls
-              muted
-              loop
-            ></video>
-            <img v-else :src="img" alt="" />
-          </template>
-        </div>
-        <p class="role">{{ projects[selectedProject].role }}</p>
-        <p><span v-html="projects[selectedProject].description"></span></p>
-        <div v-if="projects[selectedProject].location">
-          <p>
-             <br />
-            <span v-html="projects[selectedProject].location"></span>
-          </p>
-        </div>
+  <!-- Contenuto principale -->
+  <div class="works">
+    <div class="list">
+      <div
+        class="name-list"
+        v-for="(project, index) in projects"
+        :key="index"
+        @click="selectProject(index)"
+      >
+        {{ project.title }} <span>v</span>
       </div>
     </div>
+
+    <div
+      class="single-work"
+      v-if="selectedProject !== null"
+      ref="projectDetailsRef"
+    >
+      <div class="title-single">{{ projects[selectedProject].title }}</div>
+      <div class="image-gallery">
+        <template
+          v-for="(img, imgIndex) in projects[selectedProject].image"
+          :key="imgIndex"
+        >
+          <video v-if="isVideo(img)" :src="img" controls muted loop></video>
+          <img v-else :src="img" alt="" />
+        </template>
+      </div>
+      <p class="role">{{ projects[selectedProject].role }}</p>
+      <p><span v-html="projects[selectedProject].description"></span></p>
+      <div v-if="projects[selectedProject].location">
+        <p>
+          <br />
+          <span v-html="projects[selectedProject].location"></span>
+        </p>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style scoped>
-
 .works {
   color: white;
   background-color: black;
   padding: 3rem;
   height: auto;
   min-height: 100vh;
-    position: relative;
+  position: relative;
   z-index: 1;
 }
 

@@ -15,8 +15,8 @@
             that bridge culture, fashion, and contemporary design.
           </p>
           <p>
-            Formerly: Acne Studios, Loro Piana <br />Clients: Prada, Stone
-            Island, Culted, Simple Flair, NR Magazine, Convey
+            Clients: Culted, Simple Flair, Prada, Stone Island, NR Magazine
+            <br />Formerly: Acne Studios, Loro Piana
           </p>
         </div>
 
@@ -33,11 +33,8 @@
           </div>
         </div>
       </div>
-
     </div>
-          <div class="gn">
-        <a href="https://gianlucanieddu.netlify.app/">© gianlucanied</a>
-      </div>
+    <div class="gn">© gianlucanied</div>
   </div>
 </template>
 
@@ -56,7 +53,7 @@
   width: 100vw;
   height: 100vh;
   transform: translate(-50%, -50%);
-  object-fit: cover; 
+  object-fit: cover;
   z-index: -1;
 }
 
@@ -96,9 +93,9 @@ a {
 
 .gn {
   color: white;
-  font-size: 15px;
+  font-size: 8px;
   text-align: end;
-  padding: 50px;
+  padding: 70px 30px 30px;
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -107,8 +104,8 @@ a {
     max-width: 80vw;
   }
 
-  .gn a {
-    font-size: 10px;
+  .gn {
+    font-size: 7px;
   }
 
   .about {
@@ -120,5 +117,4 @@ a {
     margin-top: 3rem;
   }
 }
-
 </style>
