@@ -44,20 +44,22 @@
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
+  background-color: black;
 }
 
 .background-video {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
-  height: 100vh;
-  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: 0;
 }
 
 .about {
+  position: relative;
+  z-index: 1;
   color: white;
   padding: 6rem 0 3rem 0;
   display: flex;
@@ -97,9 +99,15 @@ a {
   text-align: end;
   padding: 70px 30px 30px;
   font-family: "Courier New", Courier, monospace;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
+  .background-video {
+    display: none;
+  }
+
   .content-wrapper {
     max-width: 80vw;
   }
@@ -117,4 +125,5 @@ a {
     margin-top: 3rem;
   }
 }
+
 </style>

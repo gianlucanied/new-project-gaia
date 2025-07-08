@@ -17,7 +17,7 @@ const isVideo = (url) => {
 const projects = [
   {
     role: "SET DESIGN",
-    title: "JOSHUA SERAFIN FOR HORST 2025 (HORST FESTIVAL)",
+    title: "SET DESIGN FOR JOSHUA SERAFIN (HORST FESTIVAL)",
 
     image: [
       "/immagini_video_high_res/details.jpg",
@@ -93,11 +93,8 @@ const projects = [
       "/immagini_video_high_res/Artboard2.png",
       "/immagini_video_high_res/Artboard3.png",
     ],
-    description: `Equilibrio is a yearly art residency and music festival taking place in Porto Ferro, Sardinia where emerging artists and experimental music
-          merge in a 7 days community experience. <br>
-          I was part of the collective, overseeing the the production of the festival (logistic, artists accommodation, food and beverage
-          organisation), the set design of the space and the communication (social media content, copywriting) and business developments (connect
-          with potential partners, make presentations and planning)`,
+    description: `Equilibrio is a yearly art residency and music festival taking place in Porto Ferro, Sardinia where emerging artists and experimental music merge in a 7 days community experience. <br>
+As part of the collective, I took care of the festival communication and image on social media, the festival production, and local/international developments.`,
     location: "",
   },
 
