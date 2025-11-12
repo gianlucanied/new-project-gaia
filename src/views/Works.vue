@@ -12,7 +12,6 @@ const projects = [
       "/immagini_video_high_res/prada/1.mp4",
       "/immagini_video_high_res/prada/2.mp4",
       "/immagini_video_high_res/prada/3.mp4",
-      "/immagini_video_high_res/prada/4.mp4",
       "/immagini_video_high_res/prada/5.mp4",
       "/immagini_video_high_res/prada/6.mp4",
       "/immagini_video_high_res/prada/7.mp4",
